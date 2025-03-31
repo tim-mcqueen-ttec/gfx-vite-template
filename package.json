@@ -1,0 +1,37 @@
+{
+  "name": "gfx-vite-template",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "lint": "eslint ."
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@types/aws-lambda": "^8.10.148",
+    "@types/node": "18.16.9",
+    "eslint": "^9.23.0",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.28.0",
+    "unplugin-zip-pack": "^1.0.3",
+    "vite": "^6.2.4"
+  },
+  "packageManager": "pnpm@10.4.0+sha512.6b849d0787d97f8f4e1f03a9b8ff8f038e79e153d6f11ae539ae7c435ff9e796df6a862c991502695c7f9e8fac8aeafc1ac5a8dab47e36148d183832d886dd52",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "aws-sdk",
+      "esbuild"
+    ]
+  }
+}
