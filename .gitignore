@@ -19,3 +19,9 @@ tsconfig.tsbuildinfo
 # ignore the output zip files
 *.zip
 ./**/*.zip
+
+# This will ignore the `lcov.info` file in the root directory and any subdirectories
+lcov.info
+
+# This will ignore the `coverage` directory and all its contents
+coverage
